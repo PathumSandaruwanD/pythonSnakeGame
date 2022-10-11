@@ -34,4 +34,12 @@ window = Tk();
 window.title("Snake Game")
 window.resizable(False, False)
 
+score = 0;
+direction = 'down'
+lable = Label(window, text="Score:{}".format(score), font=('consolas',40))
+lable.pack()
+
+canvas = Canvas(window, bg=BACKGROND_COLOR, height=GAME_HEIGHT, width=GAME_WIDTH)
+canvas.pack()
+
 window.mainloop()
